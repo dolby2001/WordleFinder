@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1 element">
+            <p class="num">3</p>
+            <p>The first word guess will always be "Slate", <br>
+            because it will always be the most likely word from my word bank.
+            </p>
+        </div>
+        <div class="div2 element">
+            <p class="num">4</p>
+            <p>Today's Guesses:</p>
+            <p id="last">Slate, Slate, Slate</p>
+        </div>
+        <div class="div3 element">
+            <p class="num">5</p>
+            <p>Result:</p>
+            <div id="game">
+                <div id="row1">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+                <div id="row2">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+                <div id="row3">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+                <div id="row4">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+                <div id="row5">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+                <div id="row6">
+                    <div id="bloc1" class="bloc"></div>
+                    <div id="bloc2" class="bloc"></div>
+                    <div id="bloc3" class="bloc"></div>
+                    <div id="bloc4" class="bloc"></div>
+                    <div id="bloc5" class="bloc"></div>
+                </div>
+            </div>
+        </div>
+        <div class="div4 element">
+            <p class="num">1</p>
+            <h1>WORDLE_FINDER</h1>
+
+        </div>
+        <div class="div5 element">
+            <p class="num">6</p>
+            <h3>HOW IT WORKS</h3>
+            <p>I have developed an algorithm that employs the entropy formula to calculate the probabilities associated with 2,309 words selected from a predefined word bank, with the objective of predicting their likelihood of being the correct answer in a game of Wordle. The algorithm takes into account the color indicators of each square, distinguishing between yellow, gray, and green. I employed web scraping, specifically utilizing Selenium, to write my guesses and find the right answer.</p>
+        </div>
+        <div class="div6 element">
+            <p class="num">2</p>
+            <h3>TODAY'S WORD:</h3>
+            <h1 id="answer">...</h1>
+        </div>
+        <div class="div7 element">
+            <img src="./imgs/wordlepage.png" alt="">
+        </div>
+
+        <div class="div8 element">            
+            <p class="num">7</p>
+            <h3>GAME INTRUCTIONS:</h3>
+            <ul>
+                <li>Each guess must be a valid 5-letter word.</li>
+                <li>The color of the tiles will change to show how close your guess was to the word.</li>
+                <ul>
+                    <li>Green : is in the word and in the correct spot.</li>
+                    <li>Yellow : is in the word but in the wrong spot.</li>
+                    <li>Grey : is not in the word in any spot.</li>
+                </ul>
+                <li>A new puzzle is released daily at midnight.</li>
+            </ul>
+        </div>
+        <div class="div9 element">
+            <p class="num">8</p>
+            <h3>WORDLE</h3>
+            <a href="https://www.nytimes.com/games/wordle">https://www.nytimes.com/games/wordle</a>
+        </div>
+        <div class="div10 element">
+            <p class="num">9</p>
+            <h3>MADE BY:</h3>
+            <p>Olivier Langelier-Mainville</p>
+            <p>Student at the University of Montreal</p>
+            <p>Computer Science</p>
+            <a href="">GitHub</a>
+            <a href="">Portfolio</a>
+        </div>
+        <div class="div11 element black"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script type="module" src="./script.js"></script>
+</body>
+</html>

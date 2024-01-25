@@ -1,0 +1,4 @@
+selenium
+flask
+flask_cors
+nltk
